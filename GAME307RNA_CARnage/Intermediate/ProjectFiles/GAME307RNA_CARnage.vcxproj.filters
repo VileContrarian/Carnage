@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\GAME307RNA_CARnage.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{6F6A7151-F406-4E7B-880B-2C0C9DB38065}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\GAME307RNA_CARnage.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\GAME307RNA_CARnageEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{C1C28921-691E-4D7F-8CBB-E6A30B356AF0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\GAME307RNA_CARnage">
+      <UniqueIdentifier>{62D86C36-C042-4ECA-BDD7-6998B10D79F5}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnage.Build.cs">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnage.cpp">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnage.h">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnageGameMode.cpp">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnageGameMode.h">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnageHud.cpp">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnageHud.h">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnagePawn.cpp">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnagePawn.h">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnageWheelFront.cpp">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnageWheelFront.h">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnageWheelRear.cpp">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnageWheelRear.h">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

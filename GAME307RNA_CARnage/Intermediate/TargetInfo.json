@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "GAME307RNA_CARnage",
+			"Path": "G:\\Documents\\Unreal Projects\\Carnage\\GAME307RNA_CARnage\\Source\\GAME307RNA_CARnage.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "GAME307RNA_CARnageEditor",
+			"Path": "G:\\Documents\\Unreal Projects\\Carnage\\GAME307RNA_CARnage\\Source\\GAME307RNA_CARnageEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
