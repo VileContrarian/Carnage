@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeGAME307RNA_CARnage_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xA83E0B09,
-				0xAE319B2B,
+				0x928043CA,
+				0x7DA9BF62,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

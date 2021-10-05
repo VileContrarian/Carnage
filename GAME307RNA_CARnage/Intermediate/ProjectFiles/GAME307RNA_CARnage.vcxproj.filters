@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GAME307RNA_CARnage.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{834B8DBE-1285-4DCA-957F-ECAE982940D1}</UniqueIdentifier>
+      <UniqueIdentifier>{BE1EC115-F369-4606-B48B-59F1728F1983}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GAME307RNA_CARnage.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{55514C18-839E-4E81-B8BE-2CCD2EED49DB}</UniqueIdentifier>
+      <UniqueIdentifier>{D4E6AAC3-BF82-452E-B413-295679B01796}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GAME307RNA_CARnage">
-      <UniqueIdentifier>{F369BCA8-FF18-46B2-ABD0-E8E5F18215CA}</UniqueIdentifier>
+      <UniqueIdentifier>{36EF9801-6373-4F58-8966-F3CA2B251075}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\GAME307RNA_CARnage\BasicCarAIController.cpp">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GAME307RNA_CARnage\BasicCarAIController.h">
+      <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClInclude>
     <None Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnage.Build.cs">
       <Filter>Source\GAME307RNA_CARnage</Filter>
     </None>
@@ -70,6 +76,24 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\GAME307RNA_CARnage\GAME307RNA_CARnageWheelRear.h">
       <Filter>Source\GAME307RNA_CARnage</Filter>
+    </ClInclude>
+    <Filter Include="Source\GAME307RNA_CARnage\Private">
+      <UniqueIdentifier>{3AD6EB8E-3AD0-4CF9-93BA-3907A1B1170D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GAME307RNA_CARnage\Private\AI_Behaviours">
+      <UniqueIdentifier>{C7CC7F24-7015-4DA0-8272-DC16BB86A054}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GAME307RNA_CARnage\Private\AI_Behaviours\SteeringBehaviour.cpp">
+      <Filter>Source\GAME307RNA_CARnage\Private\AI_Behaviours</Filter>
+    </ClCompile>
+    <Filter Include="Source\GAME307RNA_CARnage\Public">
+      <UniqueIdentifier>{0EAE0D2E-5715-4209-8CE9-66AE4DCDB4A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GAME307RNA_CARnage\Public\AI_Behaviours">
+      <UniqueIdentifier>{5E4FD469-7633-43A1-AE70-DD57EFB75878}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\GAME307RNA_CARnage\Public\AI_Behaviours\SteeringBehaviour.h">
+      <Filter>Source\GAME307RNA_CARnage\Public\AI_Behaviours</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

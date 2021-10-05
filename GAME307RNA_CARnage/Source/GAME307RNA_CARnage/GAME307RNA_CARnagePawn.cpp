@@ -15,6 +15,7 @@
 #include "Components/TextRenderComponent.h"
 #include "Materials/Material.h"
 #include "GameFramework/Controller.h"
+#include "BasicCarAIController.h"
 
 #ifndef HMD_MODULE_INCLUDED
 #define HMD_MODULE_INCLUDED 0
@@ -35,6 +36,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 AGAME307RNA_CARnagePawn::AGAME307RNA_CARnagePawn()
 {
+	//Turn off AutoPossessPlayer
+	AutoPossessPlayer = EAutoReceiveInput::Disabled;
+
 	// Car mesh
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> CarMesh(TEXT("/Game/Vehicle/Sedan/Sedan_SkelMesh.Sedan_SkelMesh"));
 	GetMesh()->SetSkeletalMesh(CarMesh.Object);
@@ -122,6 +126,17 @@ AGAME307RNA_CARnagePawn::AGAME307RNA_CARnagePawn()
 	GearDisplayColor = FColor(255, 255, 255, 255);
 
 	bInReverseGear = false;
+
+	//Set AIControllerClassRef
+	if (HasAnyFlags(RF_ClassDefaultObject) && GetClass() == AGAME307RNA_CARnagePawn::StaticClass())
+	{
+		// WARNING: This line is why the AISupport plugin has to load the AIModule before UObject initialization, otherwise this load fails and CDOs are corrupt in the editor
+		AIControllerClass = LoadClass<ABasicCarAIController>(nullptr, *((UEngine*)(UEngine::StaticClass()->GetDefaultObject()))->AIControllerClassName.ToString(), nullptr, LOAD_None, nullptr);
+	}
+	else
+	{
+		AIControllerClass = ((APawn*)APawn::StaticClass()->GetDefaultObject())->AIControllerClass;
+	}
 }
 
 void AGAME307RNA_CARnagePawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -233,6 +248,7 @@ void AGAME307RNA_CARnagePawn::BeginPlay()
 	bEnableInCar = UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled();
 #endif // HMD_MODULE_INCLUDED
 	EnableIncarView(bEnableInCar,true);
+
 }
 
 void AGAME307RNA_CARnagePawn::OnResetVR()
