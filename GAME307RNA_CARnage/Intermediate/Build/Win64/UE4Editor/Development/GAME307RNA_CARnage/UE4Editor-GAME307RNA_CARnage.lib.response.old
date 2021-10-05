@@ -1,0 +1,23 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-GAME307RNA_CARnage.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\GAME307RNA_CARnageEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnage.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnageGameMode.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnageHud.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnagePawn.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnageWheelFront.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnageWheelRear.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnage.init.gen.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnageGameMode.gen.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnageHud.gen.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnagePawn.gen.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnageWheelFront.gen.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnageWheelRear.gen.cpp.obj"
+"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\Default.rc2.res"
+/OUT:"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\UE4Editor-GAME307RNA_CARnage.lib"

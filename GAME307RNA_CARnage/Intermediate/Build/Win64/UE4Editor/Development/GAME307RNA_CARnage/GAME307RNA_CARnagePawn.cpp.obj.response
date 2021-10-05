@@ -32,8 +32,8 @@
 /wd4244
 /wd4838
 /I .
-/I "G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Inc\GAME307RNA_CARnage"
-/I "G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Source"
+/I D:\Dev\Carnage\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Inc\GAME307RNA_CARnage
+/I D:\Dev\Carnage\Carnage\GAME307RNA_CARnage\Source
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -266,18 +266,18 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\GAME307RNA_CARnageEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\GAME307RNA_CARnageEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\GAME307RNA_CARnageEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Source\GAME307RNA_CARnage\GAME307RNA_CARnagePawn.cpp"
-/FI"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\Definitions.GAME307RNA_CARnage.h"
-/Fo"G:\Documents\Unreal Projects\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnagePawn.cpp.obj"
+/FI"D:\Dev\Carnage\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\GAME307RNA_CARnageEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\Dev\Carnage\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\GAME307RNA_CARnageEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Dev\Carnage\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\GAME307RNA_CARnageEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Dev\Carnage\Carnage\GAME307RNA_CARnage\Source\GAME307RNA_CARnage\GAME307RNA_CARnagePawn.cpp"
+/FI"D:\Dev\Carnage\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\Definitions.GAME307RNA_CARnage.h"
+/Fo"D:\Dev\Carnage\Carnage\GAME307RNA_CARnage\Intermediate\Build\Win64\UE4Editor\Development\GAME307RNA_CARnage\GAME307RNA_CARnagePawn.cpp.obj"
 /TP
 /GR-
 /W4

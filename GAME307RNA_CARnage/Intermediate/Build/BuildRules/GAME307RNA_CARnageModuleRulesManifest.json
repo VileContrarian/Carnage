@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"G:\\Documents\\Unreal Projects\\Carnage\\GAME307RNA_CARnage\\Source\\GAME307RNA_CARnage\\GAME307RNA_CARnage.Build.cs",
-		"G:\\Documents\\Unreal Projects\\Carnage\\GAME307RNA_CARnage\\Source\\GAME307RNA_CARnage.Target.cs",
-		"G:\\Documents\\Unreal Projects\\Carnage\\GAME307RNA_CARnage\\Source\\GAME307RNA_CARnageEditor.Target.cs"
+		"D:\\Dev\\Carnage\\Carnage\\GAME307RNA_CARnage\\Source\\GAME307RNA_CARnage\\GAME307RNA_CARnage.Build.cs",
+		"D:\\Dev\\Carnage\\Carnage\\GAME307RNA_CARnage\\Source\\GAME307RNA_CARnage.Target.cs",
+		"D:\\Dev\\Carnage\\Carnage\\GAME307RNA_CARnage\\Source\\GAME307RNA_CARnageEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.0"
 }
