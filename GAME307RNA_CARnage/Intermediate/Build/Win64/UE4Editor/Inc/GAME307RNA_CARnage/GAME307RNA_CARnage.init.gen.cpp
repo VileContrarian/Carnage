@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeGAME307RNA_CARnage_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x928043CA,
+				0x242D4613,
 				0x7DA9BF62,
 				METADATA_PARAMS(nullptr, 0)
 			};

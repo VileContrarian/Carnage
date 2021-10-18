@@ -26,13 +26,13 @@ protected:
 	AActor* TargetActor;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	float SlowDownDistance = 1000.0f;
+	float SlowDownDistance = 10000.0f;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	float StopDistance = 100.0f;
+	float StopDistance = 1000.0f;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	float TargetAngleRange = 1.0f;
+	float TargetAngleRange = 0.0872665;//5 degrees in radians
 
 	UFUNCTION(BlueprintCallable)
 	void Arrive();
