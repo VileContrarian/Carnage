@@ -25,17 +25,26 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AActor* TargetActor;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool ShouldMove = false;
+
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	float SlowDownDistance = 10000.0f;
+	float SlowDownDistance = 5000.0f;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
 	float StopDistance = 1000.0f;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	float MinSpeedMultiplier = 0.1f;//Must be < 1
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
 	float TargetAngleRange = 0.0872665;//5 degrees in radians
 
 	UFUNCTION(BlueprintCallable)
 	void Arrive();
+
+	UFUNCTION(BlueprintCallable)
+	void Brake();
 
 	UFUNCTION(BlueprintCallable)
 	void SetTargetLocation();

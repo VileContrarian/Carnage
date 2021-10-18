@@ -8,34 +8,34 @@ void ABasicCarAIController::Arrive()
 {
 	//TODO figure out when to stop and reverse instead of doing a round-about
 
-	FVector2D CurrentDirection(GetPawn()->GetActorForwardVector().GetSafeNormal());
-	FVector2D TargetDirection((TargetLocation - GetPawn()->GetActorLocation()).GetSafeNormal());
-	float angle = UKismetMathLibrary::Acos(FVector2D::DotProduct(CurrentDirection, TargetDirection));
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Green, FString::Printf(TEXT("%f"), angle));
-	//if (angle > 3.14f) angle = 3.14f - angle;
-	if (FVector2D::CrossProduct(CurrentDirection, TargetDirection) < 0) angle = -angle;
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Blue, FString::Printf(TEXT("%f"), angle));
+	FVector2D currentDirection(GetPawn()->GetActorForwardVector().GetSafeNormal());
+	FVector2D targetDirection((TargetLocation - GetPawn()->GetActorLocation()).GetSafeNormal());
+	float angle = UKismetMathLibrary::Acos(FVector2D::DotProduct(currentDirection, targetDirection));
+	if (FVector2D::CrossProduct(currentDirection, targetDirection) < 0) angle = -angle;
 
 	if (abs(angle) > TargetAngleRange)
 	{
-		if (angle > 0)
-		{
-			Car->MoveRight(0.5f);
-		}
-		else
-		{
-			Car->MoveRight(-0.5f);
-		}
+		Car->MoveRight(angle / 3.14f);
 	}
-
-	if (FVector::Distance(Car->GetActorLocation(), TargetLocation) > StopDistance)
+	float distance = FVector::Distance(Car->GetActorLocation(), TargetLocation);
+	if (distance > StopDistance)
 	{
-		Car->MoveForward(0.5f);
+		if (distance < SlowDownDistance)
+		{
+			Car->MoveForward(0.6f);
+		}
+		else Car->MoveForward(1.0f);
 	}
 	else
 	{
 		Car->MoveForward(0.0f);
 	}
+}
+
+void ABasicCarAIController::Brake()
+{
+	if (Car->GetVelocity().Size() > 0) Car->OnHandbrakePressed();
+	else Car->OnHandbrakeReleased();
 }
 
 void ABasicCarAIController::SetTargetLocation()
@@ -54,5 +54,5 @@ void ABasicCarAIController::Tick(float deltaSeconds)
 {
 	Super::Tick(deltaSeconds);
 	SetTargetLocation();
-	Arrive();
+	if(ShouldMove) Arrive();
 }
